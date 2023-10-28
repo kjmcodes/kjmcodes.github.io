@@ -73,8 +73,8 @@ a {
 
 footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* flex-direction: column; */
+  justify-content: center;
 }
 
 .tip {
@@ -99,4 +99,9 @@ footer:hover .tip-2 {
 
 footer:hover .activities-2 {
     color: #2a9d8f;
+}
+
+.tip-footer {
+    color: #264653;
+    font-family: 'Source Code Pro', monospace;
 }
