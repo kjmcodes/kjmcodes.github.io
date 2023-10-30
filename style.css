@@ -1,69 +1,28 @@
 body {
-  background-color: #f9837d;
-  display: flex;
-  margin: 0 auto;
-  width: 100vw;
-  height: 100vh;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
-html,
-body {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: scroll;
+ margin: 0;
+ background-color: #f9837d;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 }
 
 main {
   display: flex;
-  justify-content: center;
-  /* margin: 0 auto; */
-  height: 100vh;
-}
-
-.primary {
-  font-family: "Young Serif", serif;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  min-width: 100vw;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 95vh;
+  padding: 0 10%;
   background-color: #f9837d;
-  padding-top: 15vh;
-}
-
-@media (max-width: 600px) {
-  .primary {
-    flex-direction: column;
-    max-height: none;
-  }
+  font-family: 'Young Serif', serif;
+  color: #144d51;
 }
 
 .my_name {
-  font-size: 2.5em;
+  font-size: 4em;
 }
 
-.introduction {
-  display: flex;
-  flex-direction: column;
-  padding-left: 10vw;
-}
-
-.macintosh {
-  transform: scale(0.7);
-  padding-right: none;
-}
-
-details,
-summary {
-  font-family: inherit;
-  color: #144d51;
-  font-size: 1.5em;
-  max-width: 50vw;
-  padding: 0.05em;
+.work {
+  font-size: 2.7em;
 }
 
 summary::marker {
@@ -71,33 +30,25 @@ summary::marker {
 }
 
 .activity {
-  color: #ffeee5;
+  color: #e8dec2;
+  -webkit-text-fill-color: #e8dec2;
+  -webkit-text-stroke: 1.5px #144d51;
   transition: 0.3s;
 }
 
-details:hover {
-    cursor: pointer;
-}
-
-details:hover .activity {
+p {
   background-color: #f3c8b6;
-  color: #144d51;
-  padding: 0em 0.05em;
+  font-size: 1.5em;
   border: #144d51 3px solid;
   border-radius: 8px;
   box-shadow: -8px 5px 0px #144d51;
-  cursor: pointer;
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  font-family: monospace;
+  padding: 5%;
 }
 
 .projects li {
   border: #144d51 3px solid;
+  font-size: 1.5em;
   border-radius: 8px;
   padding: 0.2em;
   background-color: #f3c8b6;
@@ -105,27 +56,45 @@ details:hover .activity {
   width: fit-content;
 }
 
+.projects li::marker {
+  content: "";
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
 }
 
-.projects li:hover {
+details:hover {
   cursor: pointer;
 }
 
-.projects li::marker {
-  content: "";
-}
-
-p {
+details:hover .activity {
   background-color: #f3c8b6;
-  max-width: 20vw;
-  font-size: 1.2rem;
-  padding: 0.2em 1em;
+  color: #144d51;
+  -webkit-text-fill-color: #144d51;
   border: #144d51 3px solid;
   border-radius: 8px;
   box-shadow: -8px 5px 0px #144d51;
+  cursor: pointer;
+  padding: 0.05em;
+}
+
+.tip {
+  border: #144d51 solid 2px;
+  background-color: #e8dec2;
+  border-radius: 8px;
+  padding: 0.3em;
+}
+
+footer {
   font-family: monospace;
-  line-height: 140%;
+  color: #144d51;
+  font-size: large;
+}
+
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
 }
