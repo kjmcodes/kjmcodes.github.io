@@ -75,6 +75,10 @@ summary::marker {
   transition: 0.3s;
 }
 
+details:hover {
+    cursor: pointer;
+}
+
 details:hover .activity {
   background-color: #f3c8b6;
   color: #144d51;
