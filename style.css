@@ -1,120 +1,127 @@
-html,
 body {
-  margin: 0;
-  background-color: #b2efe7;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: scroll;
+  background-color: #f9837d;
+  display: flex;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
 
+html,
 body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  /* margin: 0 auto; */
   height: 100vh;
 }
 
-.header {
-  display: flex;
-  justify-content: space-around;
-  font-family: "Montserrat", sans-serif;
+.primary {
   font-family: "Young Serif", serif;
-  background-color: #b2efe7;
-  padding-top: 0.3em;
-}
-
-a {
-  text-decoration: none;
-}
-.bio-1 {
-  margin-left: 7em;
-  margin-top: 6em;
-}
-
-.name {
-  font-size: 5em;
-  color: #264653;
-}
-.bio-2 {
-  font-size: 2.5em;
-  color: #264653;
-  max-width: 1200px;
-}
-
-.macintosh {
-  padding-left: 1em;
-  margin-top: 0.5em;
-  transform: scale(85%);
-}
-
-.kevin {
-  color: #e76f51;
-}
-.activities {
-  color: #2a9d8f;
-  transition: 0.3s;
-}
-
-.activities:hover {
-  border: #e76f51 solid 2px;
-  background-color: #e76f51;
-  padding: 0.1em;
-  color: #e9c46a;
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  min-width: 100vw;
+  margin: 0 auto;
+  background-color: #f9837d;
+  padding-top: 15vh;
 }
 
 @media (max-width: 600px) {
-  .header {
+  .primary {
     flex-direction: column;
-    align-items: center;
-  }
-  .macintosh {
-    transform: scale(50%);
-    padding-top: 0em;
+    max-height: none;
   }
 }
 
-footer {
+.my_name {
+  font-size: 2.5em;
+}
+
+.introduction {
   display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
+  flex-direction: column;
+  padding-left: 10vw;
 }
 
-.tip {
-  font-size: larger;
-  padding-bottom: 2em;
+.macintosh {
+  transform: scale(0.7);
+  padding-right: none;
 }
 
-.tip-2 {
-  font-family: "Source Code Pro", monospace;
-  font-weight: 400;
-  padding-bottom: 3em;
-  color: #8ecae6;
-  transition: 1s;
+details,
+summary {
+  font-family: inherit;
+  color: #144d51;
+  font-size: 1.5em;
+  max-width: 50vw;
+  padding: 0.05em;
 }
-.activities-2 {
+
+summary::marker {
+  content: "";
+}
+
+.activity {
+  color: #ffeee5;
   transition: 0.3s;
-  font-weight: bolder;
 }
 
-footer:hover .tip-2 {
-  color: #264653;
-}
-
-footer:hover .activities-2 {
-  color: #2a9d8f;
-}
-
-.tip-footer {
-  color: #264653;
-  font-family: "Source Code Pro", monospace;
-}
-
-.tip-bulb {
-  border: #e76f51 solid 1px;
+details:hover .activity {
+  background-color: #f3c8b6;
+  color: #144d51;
+  padding: 0em 0.05em;
+  border: #144d51 3px solid;
   border-radius: 8px;
-  padding: 0.3em;
-  background-color: #e76f51;
-  color: beige;
+  box-shadow: -8px 5px 0px #144d51;
+  cursor: pointer;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.projects li {
+  border: #144d51 3px solid;
+  border-radius: 8px;
+  padding: 0.2em;
+  background-color: #f3c8b6;
+  box-shadow: -8px 5px 0px #144d51;
+  width: fit-content;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.projects li:hover {
+  cursor: pointer;
+}
+
+.projects li::marker {
+  content: "";
+}
+
+p {
+  background-color: #f3c8b6;
+  max-width: 20vw;
+  font-size: 1.2rem;
+  padding: 0.2em 1em;
+  border: #144d51 3px solid;
+  border-radius: 8px;
+  box-shadow: -8px 5px 0px #144d51;
+  font-family: monospace;
+  line-height: 140%;
 }
