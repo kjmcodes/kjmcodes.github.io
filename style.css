@@ -1,9 +1,20 @@
+html,
 body {
- margin: 0;
- background-color: #f9837d;
- display: flex;
- flex-direction: column;
- align-items: center;
+  scrollbar-width: none;
+}
+
+body {
+  margin: 0;
+  background-color: #f9837d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -ms-overflow-style: none;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 main {
@@ -13,7 +24,7 @@ main {
   min-height: 95vh;
   padding: 0 10%;
   background-color: #f9837d;
-  font-family: 'Young Serif', serif;
+  font-family: "Young Serif", serif;
   color: #144d51;
 }
 
@@ -61,8 +72,8 @@ p {
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 details:hover {
@@ -85,12 +96,28 @@ details:hover .activity {
   background-color: #e8dec2;
   border-radius: 8px;
   padding: 0.3em;
+  font-weight: 700;
 }
 
 footer {
   font-family: monospace;
   color: #144d51;
   font-size: large;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links-2 {
+  max-width: 30px;
+  border: #144d51 3px solid;
+  border-radius: 8px;
+  padding: 0.3em;
+  background-color: #f3c8b6;
+  box-shadow: -5px 3px 0px #144d51;
+  width: fit-content;
 }
 
 @media (max-width: 800px) {
