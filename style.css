@@ -57,7 +57,7 @@ summary::marker {
   transition: 0.3s;
 }
 
-p {
+.about {
   background-color: #f3c8b6;
   font-size: 1.5em;
   border: #144d51 3px solid;
@@ -66,15 +66,22 @@ p {
   font-family: monospace;
   padding: 5%;
 }
+.summary {
+  background-color: #f3c8b6;
+  font-size: 1em;
+  font-family: monospace;
+  padding: 5%;
+}
 
 .projects li {
   border: #144d51 3px solid;
   font-size: 1.5em;
   border-radius: 8px;
-  padding: 0.2em;
+  padding: 5%;
   background-color: #f3c8b6;
   box-shadow: -8px 5px 0px #144d51;
   width: fit-content;
+  margin-bottom: 3%;
 }
 
 .projects li::marker {
@@ -133,5 +140,14 @@ footer {
 @media (max-width: 800px) {
   main {
     flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .macintosh {
+    scale: 70%;
+  }
+
+  p {
+    max-width: 70vw;
   }
 }
