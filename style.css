@@ -1,6 +1,22 @@
-html,
-body {
-  scrollbar-width: none;
+html {
+  scrollbar-width: auto;
+  scrollbar-color: #e8dec2 #144d5100;
+}
+
+body::-webkit-scrollbar {
+  width: 18px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #144d51;
+  width: 2px;
+  border: #f9837d 8px solid;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e8dec2;
+  border-radius: 8px;
+  border: 2px solid #144d51;
 }
 
 body {
@@ -9,12 +25,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  -ms-overflow-style: none;
-  overflow-y: scroll;
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 main {
