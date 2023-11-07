@@ -1,5 +1,3 @@
-### Portfolio Website README
-
 This README file provides information about my portfolio website hosted on GitHub Pages, showcasing my projects and a short bio.
 
 ### Introduction
