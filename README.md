@@ -14,7 +14,7 @@ The featured projects are broken down into three categories:
 
 ### Usage
 
-To use my portfolio website, simply visit the website URL [https://kjmkn.github.io/]. You can navigate through the page to view my projects and other details.
+To use my portfolio website, simply visit the website URL [https://kjmcodes.github.io/]. You can navigate through the page to view my projects and other details.
 
 
 ### Contributing
